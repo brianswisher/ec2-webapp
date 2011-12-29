@@ -54,14 +54,14 @@ NPM:
 
 If your git repository is public (i.e. viewable by anyone):
 
-    sudo -Hu www-data git clone https://github.com/you/brianswisher.git /var/brianswisher
+    sudo -Hu www-data git clone https://github.com/brianswisher/ec2-webapp.git /var/brianswisher
 
 If your git repository is private:
 
     sudo -Hu www-data ssh-keygen -t rsa  # chose "no passphrase"
     sudo cat /var/www/.ssh/id_rsa.pub
-    # Add the key as a "deploy key" at https://github.com/you/brianswisher/admin
-    sudo -Hu www-data git clone git@github.com:you/brianswisher.git /var/brianswisher
+    # Add the key as a "deploy key" at https://github.com/brianswisher/ec2-webapp/admin
+    sudo -Hu www-data git clone git@github.com:brianswisher/ec2-webapp.git /var/brianswisher
 
 
 ## Configure & start your services
